@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./dist/output.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body class="bg-[#F0FAF5] relative min-h-screen overflow-x-hidden">
+
+    <div
+        class="pointer-events-none fixed inset-0 z-0 bg-[radial-gradient(circle_at_top_right,rgba(0,107,62,0.08),transparent_70%)]">
+    </div>
+
+    <div
+        class="pointer-events-none fixed inset-0 z-[1] opacity-[0.02] mix-blend-multiply bg-[url('https://www.transparenttextures.com/patterns/p6.png')]">
+    </div>
+
+    <main class="relative z-10">
+
+        <nav
+            class="bg-[rgba(255,255,255,0.45)] w-full top-0 sticky backdrop-blur-[12px] border-b-[rgba(255,255,255,0.3)] border-b z-50">
+
+
+            <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-around">
+
+                <i
+                    class="bi bi-cart3 text-[#002D1A] text-2xl hover:text-[#D4AF37] transition-colors cursor-pointer md:order-2 md:hidden ">
+                </i>
+                <button
+                    class="hidden order-2 md:block md:rounded-full md:bg-[#006B3E] md:text-white md:font-medium md:py-2.5 md:px-8 md:hover:shadow-[0_10px_20px_rgba(0,107,62,0.3)] md:hover:-translate-y-0.5 transition-all duration-300 md:hover:brightness-110 md:uppercase ">Shop
+                    Now</button>
+                <div class="flex-1 md:hidden"></div>
+
+                <div
+                    class="text-2xl font-bold text-[#002D1A] tracking-widest flex-1 text-center md:text-left md:text-[28px] lg:text-[42px] md:tracking-[0.5rem] ">
+                    SUFI
+                </div>
+                <ul
+                    class="hidden md:flex md:gap-[20px] md:text-[13px] md:mr-[-79px] lg:gap-[40px] lg:text-[17px] justify-center flex-[2] text-[#002D1A] gap-10 font-medium">
+                    <li class="cursor-pointer hover:text-[#D4AF37] transition-colors">Our Heritage</li>
+                    <li class="cursor-pointer hover:text-[#D4AF37] transition-colors">The Science</li>
+                    <li class="cursor-pointer hover:text-[#D4AF37] transition-colors">Products</li>
+                    <li class="cursor-pointer hover:text-[#D4AF37] transition-colors">Sufi Care</li>
+                </ul>
+
+                <div class="flex-1 flex justify-end">
+                    <button id="menu-btn"
+                        class="group flex flex-col justify-center items-center w-8 h-8 gap-1.5 focus:outline-none md:hidden">
+                        <span class="line w-6 h-0.5 bg-[#002D1A] transition-all duration-300"></span>
+                        <span class="line w-6 h-0.5 bg-[#002D1A] transition-all duration-300"></span>
+                        <span class="line w-6 h-0.5 bg-[#002D1A] transition-all duration-300"></span>
+                    </button>
+                </div>
+            </div>
+
+            <div id="mobile-menu"
+                class="max-h-0 overflow-hidden opacity-0 transition-all duration-500 ease-in-out bg-white/60 backdrop-blur-xl">
+                <ul class="flex flex-col gap-6 text-[#002D1A] font-medium text-lg px-8 py-10">
+                    <li
+                        class="hover:text-[#D4AF37] transform translate-x-[-20px] transition-all duration-500 delay-100 link-item">
+                        Our Heritage</li>
+                    <li
+                        class="hover:text-[#D4AF37] transform translate-x-[-20px] transition-all duration-500 delay-200 link-item">
+                        The Science</li>
+                    <li
+                        class="hover:text-[#D4AF37] transform translate-x-[-20px] transition-all duration-500 delay-300 link-item">
+                        Products</li>
+                    <li
+                        class="hover:text-[#D4AF37] transform translate-x-[-20px] transition-all duration-500 delay-400 link-item">
+                        Sufi Care</li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="md:mt-[100px] lg:flex lg:justify-around ">
+            <div>
+                <h1
+                    class="md:text-6xl lg:text-left text-[#006B3E] text-3xl text-center font-bold lg:mt-[160px] md:max-w-2xl md:mx-auto lg:max-w-fit lg:mx-0 mt-[60px] leading-tight md:p-4 xl">
+                    Purity <span class="font-medium">in Every Fiber</span>
+                </h1>
+                <h1
+                    class="opacity-80 mt-4 text-[22px] md:text-[28px] md:mt-[24px] md:text-center lg:text-left text-center md:p-4 xl:text-left">
+                    سوفی تیرے نال
+                </h1>`
+
+            </div>
+            <div onclick="move(event)" class=" lg:w-[31%] flex justify-center">
+                <img id="sufi-default" src="sufi-removebg-preview (1).png"
+                    class="absolute transition-opacity duration-700 ease-in-out opacity-100  h-full object-contain cursor-pointer">
+
+                <img id="sufi-hover" src="twin (1).png"
+                    class="absolute transition-opacity duration-700 ease-in-out opacity-0 w-auto h-full object-contain">
+            </div>
+        </section>
+    </main>
+    <script src="script.mjs"></script>
+</body>
+
+</html>
