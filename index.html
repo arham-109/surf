@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
-<body class="bg-[#F0FAF5] relative min-h-screen overflow-x-hidden">
+<body class="bg-[#F0FAF5] relative min-h-screen">
 
     <div
         class="pointer-events-none fixed inset-0 z-0 bg-[radial-gradient(circle_at_top_right,rgba(0,107,62,0.08),transparent_70%)]">
@@ -20,43 +20,37 @@
     </div>
 
     <main class="relative z-10">
-
         <nav
             class="bg-[rgba(255,255,255,0.45)] w-full top-0 sticky backdrop-blur-[12px] border-b-[rgba(255,255,255,0.3)] border-b z-50">
-
-
             <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-around">
-
                 <i
-                    class="bi bi-cart3 text-[#002D1A] text-2xl hover:text-[#D4AF37] transition-colors cursor-pointer md:order-2 md:hidden ">
+                    class="bi bi-cart3 text-[#002D1A] text-2xl hover:text-[#D4AF37] transition-colors cursor-pointer lg:order-2 lg:hidden ">
+
                 </i>
                 <button
-                    class="hidden order-2 md:block md:rounded-full md:bg-[#006B3E] md:text-white md:font-medium md:py-2.5 md:px-8 md:hover:shadow-[0_10px_20px_rgba(0,107,62,0.3)] md:hover:-translate-y-0.5 transition-all duration-300 md:hover:brightness-110 md:uppercase ">Shop
+                    class="hidden order-2 lg:block lg:rounded-full lg:bg-[#006B3E] lg:text-white lg:font-medium lg:py-2.5 lg:px-8 lg:hover:shadow-[0_10px_20px_rgba(0,107,62,0.3)] lg:hover:-translate-y-0.5 transition-all duration-300 lg:hover:brightness-110 lg:uppercase cursor-pointer">Shop
                     Now</button>
-                <div class="flex-1 md:hidden"></div>
-
+                <div class="flex-1 lg:hidden"></div>
                 <div
-                    class="text-2xl font-bold text-[#002D1A] tracking-widest flex-1 text-center md:text-left md:text-[28px] lg:text-[42px] md:tracking-[0.5rem] ">
+                    class="text-2xl font-bold text-[#002D1A] tracking-widest flex-1 text-center lg:text-left lg:text-[28px] lg:text-[42px] lg:tracking-[0.5rem] cursor-default">
                     SUFI
                 </div>
                 <ul
-                    class="hidden md:flex md:gap-[20px] md:text-[13px] md:mr-[-79px] lg:gap-[40px] lg:text-[17px] justify-center flex-[2] text-[#002D1A] gap-10 font-medium">
+                    class="hidden lg:flex lg:gap-[20px] lg:text-[13px] lg:mr-[-79px] lg:gap-[40px] lg:text-[17px] justify-center flex-[2] text-[#002D1A] gap-10 font-medium">
                     <li class="cursor-pointer hover:text-[#D4AF37] transition-colors">Our Heritage</li>
                     <li class="cursor-pointer hover:text-[#D4AF37] transition-colors">The Science</li>
                     <li class="cursor-pointer hover:text-[#D4AF37] transition-colors">Products</li>
                     <li class="cursor-pointer hover:text-[#D4AF37] transition-colors">Sufi Care</li>
                 </ul>
-
                 <div class="flex-1 flex justify-end">
                     <button id="menu-btn"
-                        class="group flex flex-col justify-center items-center w-8 h-8 gap-1.5 focus:outline-none md:hidden">
+                        class="group flex flex-col justify-center items-center w-8 h-8 gap-1.5 focus:outline-none lg:hidden">
                         <span class="line w-6 h-0.5 bg-[#002D1A] transition-all duration-300"></span>
                         <span class="line w-6 h-0.5 bg-[#002D1A] transition-all duration-300"></span>
                         <span class="line w-6 h-0.5 bg-[#002D1A] transition-all duration-300"></span>
                     </button>
                 </div>
             </div>
-
             <div id="mobile-menu"
                 class="max-h-0 overflow-hidden opacity-0 transition-all duration-500 ease-in-out bg-white/60 backdrop-blur-xl">
                 <ul class="flex flex-col gap-6 text-[#002D1A] font-medium text-lg px-8 py-10">
@@ -76,27 +70,197 @@
             </div>
         </nav>
 
-        <section class="md:mt-[100px] lg:flex lg:justify-around ">
-            <div>
+        <section class="lg:mt-[100px] lg:flex lg:justify-around">
+
+            <div class="flex flex-col items-center lg:items-start">
                 <h1
-                    class="md:text-6xl lg:text-left text-[#006B3E] text-3xl text-center font-bold lg:mt-[160px] md:max-w-2xl md:mx-auto lg:max-w-fit lg:mx-0 mt-[60px] leading-tight md:p-4 xl">
+                    class="lg:text-6xl lg:text-left text-[#006B3E] text-3xl text-center font-bold lg:mt-[160px] lg:max-w-2xl lg:mx-auto lg:max-w-fit lg:mx-0 mt-[60px] leading-tight lg:p-4 cursor-default">
                     Purity <span class="font-medium">in Every Fiber</span>
                 </h1>
                 <h1
-                    class="opacity-80 mt-4 text-[22px] md:text-[28px] md:mt-[24px] md:text-center lg:text-left text-center md:p-4 xl:text-left">
+                    class="opacity-80 mt-4 text-[22px] lg:text-[28px] lg:mt-[-19px] lg:text-center lg:text-left text-center lg:p-4 cursor-default">
                     سوفی تیرے نال
-                </h1>`
-
+                </h1>
+                <button
+                    class="mt-8 lg:mt-[29px] rounded-full bg-[#006B3E] text-white font-medium py-2.5 px-8 hover:shadow-[0_10px_20px_rgba(0,107,62,0.3)] hover:-translate-y-0.5 transition-all duration-300 hover:brightness-110 uppercase cursor-pointer">
+                    Explore the Range
+                </button>
             </div>
-            <div onclick="move(event)" class=" lg:w-[31%] flex justify-center">
+
+            <div class=" lg:w-[31%] flex justify-center">
                 <img id="sufi-default" src="sufi-removebg-preview (1).png"
-                    class="absolute transition-opacity duration-700 ease-in-out opacity-100  h-full object-contain cursor-pointer">
-
-                <img id="sufi-hover" src="twin (1).png"
-                    class="absolute transition-opacity duration-700 ease-in-out opacity-0 w-auto h-full object-contain">
+                    class="absolute transition-opacity duration-700 ease-in-out opacity-100 drop-shadow-2xl h-full object-contain cursor-default">
             </div>
+
         </section>
+
     </main>
+
+    <section class="bg-white py-20 px-4 sm:px-6 lg:px-8 sm:mt-[16%] mt-[87%]">
+        <h1 class="mb-16 font-bold lg:text-4xl text-[#006B3E] text-center cursor-default">The Sufi Promise</h1>
+        <container class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-12">
+            <cards
+                class="flex flex-col items-center text-center p-8 rounded-2xl bg-white border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 ease-in-out cursor-pointer">
+                <div class="w-16 h-16 flex items-center justify-center">
+                    <img src="icon.svg" alt="">
+                </div>
+                <h1 class="text-2xl font-bold text-gray-900 mb-4">Tough on Stains</h1>
+                <p class="text-base text-gray-600 leading-relaxed">Engineered with advanced enzyme technology to
+                    penetrate deep into fibers, removing even the most
+                    stubborn grease and grime without pre-soaking.</p>
+            </cards>
+            <cards
+                class="flex flex-col items-center text-center p-8 rounded-2xl bg-white border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 ease-in-out cursor-pointer">
+                <div class="w-16 h-16 flex items-center justify-center">
+                    <img src="icon-2.svg" alt="">
+                </div>
+                <h1 class="text-2xl font-bold text-gray-900 mb-4">Gentle on Fabric</h1>
+                <p class="text-base text-gray-600 leading-relaxed">Our pH-balanced formula ensures that your clothes
+                    stay looking new for longer, maintaining color
+                    vibrancy and protecting delicate threads from wear.</p>
+            </cards>
+            <cards
+                class="flex flex-col items-center text-center p-8 rounded-2xl bg-white border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 ease-in-out cursor-pointer">
+                <div class="w-16 h-16 flex items-center justify-center">
+                    <img src="icon-3.svg" alt="">
+                </div>
+                <h1 class="text-2xl font-bold text-gray-900 mb-4">Lasting Freshness</h1>
+                <p class="text-base text-gray-600 leading-relaxed">Infused with floral extracts that lock into the
+                    fabric, providing a crisp, clean scent that
+                    lingers from the wash cycle all the way to the wardrobe.</p>
+            </cards>
+        </container>
+    </section>
+
+    <section class="w-full min-h-[600px] flex flex-col lg:flex-row items-center justify-center gap-10 lg:gap-48 py-20 px-6
+  [background-image:radial-gradient(ellipse_at_70%_85%,_#E2E8F0_0%,_transparent_25%),_radial-gradient(circle_at_70%_50%,_#FFFFFF_0%,_#F8FAF9_70%)] 
+  background-no-repeat">
+
+        <div class="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left">
+            <div>
+                <h1 class="font-bold text-[14px] lg:text-[16px] text-[#006838] cursor-default tracking-widest">
+                    ADVANCED BIO-ENZYME FORMULA
+                </h1>
+                <p
+                    class="font-black text-3xl md:text-4xl lg:text-5xl text-[#1A202C] mt-6 lg:mt-8 cursor-default leading-tight">
+                    The Sufi Standard of <br class="hidden lg:block" /> Absolute Purity
+                </p>
+            </div>
+
+            <div class="flex flex-col gap-6 lg:gap-8 mt-8">
+                <div class="flex flex-col gap-2">
+                    <h1 class="font-bold text-xl lg:text-2xl text-[#2D3748] cursor-default">Deep Fiber Penetration</h1>
+                    <p class="text-[15px] lg:text-[16px] text-[#718096] max-w-md cursor-default">Our "Quick Action"
+                        technology reaches deep into fabric layers to lift stubborn stains that ordinary detergents
+                        leave behind.</p>
+                </div>
+
+                <div class="flex flex-col gap-2">
+                    <h1 class="font-bold text-xl lg:text-2xl text-[#2D3748] cursor-default">Fabric Brilliance Guard</h1>
+                    <p class="text-[15px] lg:text-[16px] text-[#718096] max-w-md cursor-default">Formulated to protect
+                        the structural integrity of your clothes, keeping whites bright and colors as vivid as the day
+                        you bought them.</p>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <h1 class="font-bold text-xl lg:text-2xl text-[#2D3748] cursor-default">Dermatologically Gentle</h1>
+                    <p class="text-[15px] lg:text-[16px] text-[#718096] max-w-md cursor-default">A powerful clean that
+                        remains kind to your skin. pH-balanced and optimized for family-safe laundry care.
+                    </p>
+
+                </div>
+            </div>
+
+            <button
+                class="lg:mt-[40px] rounded-full bg-[#006B3E] text-white font-bold py-3 px-10 hover:shadow-xl transition-all duration-300 uppercase cursor-pointer mt-4">
+                SHOP SUFI SUPER
+            </button>
+        </div>
+
+        <div class="w-full lg:w-auto flex justify-center mt-12 lg:mt-0">
+            <img src="susi super.png" alt="sufi super bag"
+                class="w-[70%] md:w-[50%] lg:w-full max-w-[450px] h-auto drop-shadow-[0_35px_35px_rgba(0,0,0,0.2)] transition-transform duration-700 hover:scale-105 z-10">
+        </div>
+
+    </section>
+
+
+    <section class="bg-linear-to-b from-[#F8FAF9] to-white">
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row py-20 items-center justify-between min-h-[600px] px-8">
+
+            <div
+                class="w-full lg:w-1/2 flex justify-center items-center relative transition-transform duration-700 hover:scale-105 z-10">
+
+                <div class="absolute w-72 h-72 bg-blue-50/30 blur-[100px] rounded-full -z-10"></div>
+
+                <img src="shirt.png" alt="A cleaned Shirt"
+                    class="drop-shadow-2xl relative z-10 max-w-[80%] md:max-w-[60%] lg:max-w-full h-auto">
+            </div>
+
+            <div class="w-full lg:w-[45%] flex flex-col items-center lg:items-start text-center lg:text-left space-y-6">
+                <p class="text-green-600 font-bold tracking-[0.2em] text-xs uppercase">SUFI CARE PROTOCOL</p>
+                <h1 class="text-4xl lg:text-6xl font-extrabold text-slate-900 leading-tight">
+                    Gentle on Fibers, Kind to Skin.
+                </h1>
+                <p class="text-lg text-slate-600 leading-relaxed max-w-[480px]">
+                    Our advanced formula preserves the structural integrity of your fabrics while ensuring a
+                    hypoallergenic touch. Experience a deeper clean that protects the clothes you love and the skin you
+                    live in.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-linear-to-b from-white via-green-50/50 to-green-100/30 py-32">
+
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between">
+
+            <div class="w-full lg:w-1/2 relative flex justify-center ">
+
+                <div class="absolute w-[110%] h-[110%] bg-green-200/20 blur-[120px] rounded-full -z-10">
+                </div>
+                <img src="twin-Photoroom.png" alt="Sufi Twin Bag"
+                    class="drop-shadow-[0_30px_50px_rgba(0,107,62,0.18)] max-w-full object-contain transition-all duration-700 ease-in-out hover:scale-[1.03] hover:-translate-y-2 relative z-10">
+
+            </div>
+
+            <div class="w-full lg:w-[45%] flex flex-col items-center lg:items-start">
+
+                <p class="text-green-600 font-bold tracking-[0.3em] text-[10px] uppercase mb-4">ADVANCED FORMULATION</p>
+                <h1 class="text-4xl  lg:text-6xl font-extrabold text-slate-900 leading-[1.1] mb-6">Preserving
+                    Colors,Perfecting Care.</h1>
+                <p class="text-lg text-slate-600 leading-relaxed max-w-[480px] mb-8">Our Twin-Action formula penetrates
+                    deep into the fibers to lift stains while locking in the original vibrancy of your fabrics. Trusted
+                    by generations to keep your wardrobe looking brand new, wash after wash.</p>
+                <button
+                    class="bg-[#006B3E] text-white font-bold py-3 px-10 rounded-full hover:shadow-xl transition-all duration-300">VIEW
+                    THE COLLECTION</button>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <script src="script.mjs"></script>
 </body>
 
