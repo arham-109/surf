@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thank You for Your Order | SUFI</title>
+    <link rel="stylesheet" href="./dist/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+
+  <body class="bg-[#F0FAF5] min-h-screen w-full relative text-slate-800 overflow-x-hidden flex flex-col justify-between">
+    <!-- BACKGROUND DECORATIONS -->
+    <div
+      aria-hidden="true"
+      class="pointer-events-none fixed inset-0 z-0 bg-[radial-gradient(circle_at_top_right,rgba(0,107,62,0.12),transparent_65%)]"
+    ></div>
+    <div
+      aria-hidden="true"
+      class="pointer-events-none fixed inset-0 z-0 opacity-[0.025] mix-blend-multiply bg-[url('https://www.transparenttextures.com/patterns/p6.png')]"
+    ></div>
+
+    <div class="relative z-10 w-full grow flex flex-col">
+      <!-- NAVBAR -->
+      <nav
+        class="bg-white/55 backdrop-blur-[18px] sticky top-0 z-50 border-b border-white/50 shadow-[0_5px_25px_rgba(0,45,26,0.04)]"
+      >
+        <div
+          class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 h-19 py-4 flex items-center justify-between"
+        >
+          <!-- LOGO -->
+          <a
+            href="index.html"
+            class="text-2xl sm:text-3xl font-extrabold text-[#002D1A] tracking-[0.25em] transition-all duration-300 hover:text-[#006B3E]"
+          >
+            SUFI
+          </a>
+
+          <!-- BACK TO SHOP -->
+          <a
+            href="shop.html"
+            class="group text-sm sm:text-base font-semibold text-[#002D1A] hover:text-[#006B3E] transition-colors duration-300 flex items-center gap-2"
+          >
+            <span
+              class="flex items-center justify-center w-8 h-8 rounded-full bg-white/70 border border-[#006B3E]/10 group-hover:bg-[#006B3E] group-hover:text-white transition-all duration-300"
+            >
+              <i class="bi bi-arrow-left"></i>
+            </span>
+            <span class="hidden sm:inline">Continue Shopping</span>
+          </a>
+        </div>
+      </nav>
+
+      <!-- MAIN CONTENT -->
+      <main class="grow flex items-center justify-center px-5 sm:px-6 lg:px-8 py-12 lg:py-16">
+        <div class="max-w-3xl w-full mx-auto">
+          
+          <!-- CONFIRMATION CARD -->
+          <div
+            class="bg-white/80 backdrop-blur-md rounded-[2.5rem] border border-white p-8 sm:p-12 shadow-[0_20px_50px_rgba(0,45,26,0.08)] text-center relative overflow-hidden"
+          >
+            <!-- Top Accent Gradient Line -->
+            <div class="absolute top-0 left-0 right-0 h-2 bg-linear-to-r from-[#006B3E] via-[#D4AF37] to-[#002D1A]"></div>
+
+            <!-- Animated Success Badge -->
+            <div class="relative inline-flex items-center justify-center mb-8">
+              <div class="absolute w-24 h-24 rounded-full bg-[#006B3E]/10 animate-ping"></div>
+              <div class="w-20 h-20 rounded-full bg-[#006B3E] text-white flex items-center justify-center text-4xl shadow-[0_10px_25px_rgba(0,107,62,0.30)] relative z-10">
+                <i class="bi bi-check-lg"></i>
+              </div>
+            </div>
+
+            <!-- Title & Subtitle -->
+            <p class="text-[#006B3E] font-bold tracking-[0.25em] text-xs uppercase mb-2">
+              ORDER CONFIRMED
+            </p>
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#002D1A] tracking-tight">
+              Thank You for Your Purchase!
+            </h1>
+            <p class="mt-4 text-slate-600 leading-relaxed max-w-xl mx-auto text-base sm:text-lg">
+              We’ve received your order and are preparing your Sufi products with the utmost care. Get ready to experience pure clean.
+            </p>
+
+            <!-- Order Details Box -->
+            <div class="mt-8 bg-[#F7FAF8] rounded-2xl p-6 border border-slate-100/80 text-left">
+              <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center pb-4 border-b border-slate-200/60 gap-2">
+                <div>
+                  <span class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Order Number</span>
+                  <p class="text-lg font-extrabold text-[#002D1A]">#SF-948201</p>
+                </div>
+                <div class="sm:text-right">
+                  <span class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Estimated Delivery</span>
+                  <p class="text-sm font-bold text-[#006B3E]">2 - 3 Business Days</p>
+                </div>
+              </div>
+
+              <!-- Item Summary Placeholder -->
+              <div class="mt-4 flex items-center gap-4">
+                <div class="w-14 h-14 rounded-xl bg-white border border-slate-200/60 flex items-center justify-center shrink-0">
+                  <i class="bi bi-[#006B3E] bi-box-seam text-2xl text-[#006B3E]"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-[#002D1A] text-sm sm:text-base">Sufi Premium Fabric Care Pack</h4>
+                  <p class="text-xs text-slate-500">Standard Express Shipping • Confirmation sent to email</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Next Steps Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8">
+              <div class="p-4 rounded-xl bg-white border border-slate-100 text-center shadow-sm">
+                <div class="w-10 h-10 mx-auto rounded-full bg-[#F0FAF5] flex items-center justify-center text-[#006B3E] mb-2">
+                  <i class="bi bi-envelope-check"></i>
+                </div>
+                <h5 class="text-xs font-bold text-[#002D1A]">Email Sent</h5>
+                <p class="text-[11px] text-slate-500 mt-1">Receipt & details emailed to you.</p>
+              </div>
+
+              <div class="p-4 rounded-xl bg-white border border-slate-100 text-center shadow-sm">
+                <div class="w-10 h-10 mx-auto rounded-full bg-[#F0FAF5] flex items-center justify-center text-[#006B3E] mb-2">
+                  <i class="bi bi-truck"></i>
+                </div>
+                <h5 class="text-xs font-bold text-[#002D1A]">Fast Dispatch</h5>
+                <p class="text-[11px] text-slate-500 mt-1">Packaged with purity & care.</p>
+              </div>
+
+              <div class="p-4 rounded-xl bg-white border border-slate-100 text-center shadow-sm">
+                <div class="w-10 h-10 mx-auto rounded-full bg-[#F0FAF5] flex items-center justify-center text-[#006B3E] mb-2">
+                  <i class="bi bi-stars text-[#D4AF37]"></i>
+                </div>
+                <h5 class="text-xs font-bold text-[#002D1A]">Sufi Quality</h5>
+                <p class="text-[11px] text-slate-500 mt-1">100% Satisfaction guaranteed.</p>
+              </div>
+            </div>
+
+            <!-- Call To Actions -->
+            <div class="flex flex-col sm:flex-row gap-4 mt-10 justify-center">
+              <a
+                href="index.html"
+                class="relative overflow-hidden after:content-[''] after:absolute after:top-0 after:-left-[120%] after:w-[60%] after:h-full after:bg-linear-to-r after:from-transparent after:via-white/30 after:to-transparent after:-skew-x-20 after:transition-all after:duration-700 hover:after:left-[140%] rounded-full bg-[#006B3E] text-white font-bold py-3.5 px-8 shadow-[0_10px_25px_rgba(0,107,62,0.20)] hover:shadow-[0_15px_30px_rgba(0,107,62,0.30)] hover:-translate-y-1 transition-all duration-300 uppercase text-sm tracking-wide text-center"
+              >
+                Return to Home
+              </a>
+              <a
+                href="shop.html"
+                class="rounded-full border border-[#006B3E]/20 bg-white text-[#006B3E] font-bold py-3.5 px-8 hover:bg-[#F0FAF5] hover:-translate-y-1 hover:shadow-md transition-all duration-300 uppercase text-sm tracking-wide text-center"
+              >
+                Shop More Products
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#002D1A] py-8 px-6 relative z-10 border-t border-white/10">
+      <div
+        class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left"
+      >
+        <a
+          href="index.html"
+          class="text-xl font-extrabold tracking-[0.25em] text-white"
+        >
+          SUFI
+        </a>
+        <p class="text-slate-400 text-xs">
+          © 2026 SUFI. Pure care in every wash.
+        </p>
+        <div class="flex gap-3">
+          <a
+            href="#"
+            aria-label="Instagram"
+            class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-slate-200 hover:bg-[#006B3E] hover:text-white transition-all duration-300 text-sm"
+          >
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a
+            href="#"
+            aria-label="Facebook"
+            class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-slate-200 hover:bg-[#006B3E] hover:text-white transition-all duration-300 text-sm"
+          >
+            <i class="bi bi-facebook"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
